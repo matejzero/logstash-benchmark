@@ -20,6 +20,7 @@ Test scenarios
 
 ![Bench01](https://github.com/matejzero/logstash-benchmark/blob/master/graphite-graphs/bench-1-average-log.png "Benchmark 01")
 
+
 * Log examples in generator plugin and no filters  - bench02
 
 | Bench number    | Generator CPU  | Worker CPU | Output CPU | Events/s  |
@@ -27,6 +28,7 @@ Test scenarios
 | 2  	 | 33% | 30% | 70% | **70000** |
 
 ![Bench02](https://github.com/matejzero/logstash-benchmark/blob/master/graphite-graphs/bench-2-average-log.png "Benchmark 02")
+
 
 * Log examples in generator and partial grok filters (one line for every type)  - bench03
 
@@ -36,23 +38,22 @@ Test scenarios
 
 ![Bench03](https://github.com/matejzero/logstash-benchmark/blob/master/graphite-graphs/bench-3-average-log.png "Benchmark 03")
 
+
 * Same as above, but droping logs (inside if statements for every type), that are not successfully parsed - bench04
 
-Result: 
 | Bench number    | Generator CPU  | Worker CPU | Output CPU | Events/s  |
 | :--------------:|:-------------: | :-----:    | :-----:    | :-----:   |
 | 4 	 | - | - | - | - |
 
 
-
 * Log examples in generator and full grok filters inside config file - bench05
 
-Result: 
 | Bench number    | Generator CPU  | Worker CPU | Output CPU | Events/s  |
 | :--------------:|:-------------: | :-----:    | :-----:    | :-----:   |
 | 5 	 | 12% | 95% |  26% |  **4000** |
 
 ![Bench05](https://github.com/matejzero/logstash-benchmark/blob/master/graphite-graphs/bench-5-average-log.png "Benchmark 05")
+
 
 * Log examples in generator and full grok filters from patterns file - bench06
 
@@ -61,6 +62,7 @@ Result:
 | 6  	 |  5% | 95% |  7% |  **4000** |
 
 ![Bench06](https://github.com/matejzero/logstash-benchmark/blob/master/graphite-graphs/bench-6-average-log.png "Benchmark 06")
+
 
 * Log examples in generator, full grok parse and some other modifications (date, mutate, rename) and different numbers of filter worker
   * grok filters inside config file
@@ -85,6 +87,7 @@ Result:
 
 
 ![Bench072](https://github.com/matejzero/logstash-benchmark/blob/master/graphite-graphs/bench-72-average-log.png "Benchmark 072")
+
 
 Results
 -----------
