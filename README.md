@@ -11,7 +11,7 @@ All tests had 3 generator input filters, 3 filter workers and 1 output (graphite
 Test scenarios
 -----------
 
-- Base measurement:
+- Base measurement - bench01
 Default generator plugin and no filters.
 
 ```Result: 
@@ -21,7 +21,7 @@ Output running at 70% CPU.
 
 Speed: 66000 events/s
 ```
-- Log examples in generator plugin and no filters
+- Log examples in generator plugin and no filters  - bench02
 ```Result: 
 Every generator running at 33% CPU.
 Every worker running at 30% CPU.
@@ -29,7 +29,7 @@ Output running at 70% CPU.
 
 Speed: 70000 events/s
 ```
-- Logs examples in generator and partial grok filters (one line for every type)
+- Logs examples in generator and partial grok filters (one line for every type)  - bench03
 ```Result: 
 Every generator running at 16% CPU.
 Every worker running at 90% CPU.
@@ -37,9 +37,9 @@ Output running at 28% CPU.
 
 Speed: 22000 events/s
 ```
-- Same as above, but droping logs (inside if statements for every type), that are not successfully parsed  ### ne vem kako ###
+- Same as above, but droping logs (inside if statements for every type), that are not successfully parsed - bench04
 
-- Logs examples in generator and full grok filters inside config file
+- Logs examples in generator and full grok filters inside config file - bench05
 ```Result: 
 Every generator running at 12% CPU.
 Every worker running at 95% CPU.
@@ -47,7 +47,7 @@ Output running at 26% CPU.
 
 Speed: 16000 events/s
 ```
-- Logs examples in generator and full grok filters from patterns file.
+- Logs examples in generator and full grok filters from patterns file - bench06
 ```Result: 
 Every generator running at 5% CPU.
 Every worker running at 95% CPU.
