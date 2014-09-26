@@ -14,13 +14,13 @@ Test scenarios
 - Base measurement:
 Default generator plugin and no filters.
 
-Result: 
+```Result: 
 Every generator running at 30% CPU.
 Every worker running at 30% CPU.
 Output running at 70% CPU.
 
 Speed: 66000 events/s
-
+```
 - Log examples in generator plugin and no filters
 ```Result: 
 Every generator running at 33% CPU.
