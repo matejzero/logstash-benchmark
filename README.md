@@ -62,5 +62,5 @@ Speed: 4000 events/s
 ```
 ![Bench06](https://github.com/matejzero/logstash-benchmark/blob/master/graphite-graphs/bench-6-average-log.png "Benchmark 06")
 - Log examples in generator, full grok parse and some other modifications (date, mutate, rename)
-	- grok filters inside config file
-	- grok filters from patterns file
+-- grok filters inside config file
+-- grok filters from patterns file
