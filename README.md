@@ -50,7 +50,7 @@ Test scenarios
 
  | Bench number    | Generator CPU  | Worker CPU | Output CPU | Events/s  |
  | :--------------:|:-------------: | :-----:    | :-----:    | :-----:   |
- | 5 	 | 12% | 95% |  26% |  **4000** |
+ | 5 	 | 12% | 95% |  26% |  **16600** |
 
  ![Bench05](https://github.com/matejzero/logstash-benchmark/blob/master/graphite-graphs/bench-5-average-log.png "Benchmark 05")
 
@@ -96,7 +96,7 @@ Results
 | 2  	 | 33% | 30% | 70% | **70000** |
 | 3 	 | 16% | 90% | 28% | **22000** |
 | 4 	 | - | - | - | - |
-| 5 	 | 12% | 95% |  26% |  **4000** |
+| 5 	 | 12% | 95% |  26% |  **16600** |
 | 6  	 |  5% | 95% |  7% |  **4000** |
 | 7.1 w3 | 6% | 90% | 9% | **4000** |
 | 7.1 w4 | 4% | 75% | 6% | **5000** |
