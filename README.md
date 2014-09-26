@@ -66,9 +66,25 @@ Speed: 4000 events/s
 ```
 ![Bench06](https://github.com/matejzero/logstash-benchmark/blob/master/graphite-graphs/bench-6-average-log.png "Benchmark 06")
 
-* Log examples in generator, full grok parse and some other modifications (date, mutate, rename)
+* Log examples in generator, full grok parse and some other modifications (date, mutate, rename) and different numbers of filter worker
   * grok filters inside config file
-```Result: 
+```Result - 3 workers: 
+Every generator running at 6% CPU.
+Every worker running at 90% CPU.
+Output running at 9% CPU.
+
+Speed: 4000 events/s
+```
+
+```Result - 4 workers: 
+Every generator running at 6% CPU.
+Every worker running at 90% CPU.
+Output running at 9% CPU.
+
+Speed: 4000 events/s
+```
+
+```Result - 5 workers: 
 Every generator running at 6% CPU.
 Every worker running at 90% CPU.
 Output running at 9% CPU.
