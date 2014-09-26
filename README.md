@@ -22,7 +22,6 @@ Test scenarios
 
 * Log examples in generator plugin and no filters  - bench02
 
-Result: 
 | Bench number    | Generator CPU  | Worker CPU | Output CPU | Events/s  |
 | :--------------:|:-------------: | :-----:    | :-----:    | :-----:   |
 | 2  	 | 33% | 30% | 70% | **70000** |
@@ -31,7 +30,6 @@ Result:
 
 * Log examples in generator and partial grok filters (one line for every type)  - bench03
 
-Result: 
 | Bench number    | Generator CPU  | Worker CPU | Output CPU | Events/s  |
 | :--------------:|:-------------: | :-----:    | :-----:    | :-----:   |
 | 3 	 | 16% | 90% | 28% | **22000** |
