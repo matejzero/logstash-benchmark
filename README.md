@@ -101,6 +101,7 @@ Speed: 4300 events/s
 ![Bench071](https://github.com/matejzero/logstash-benchmark/blob/master/graphite-graphs/bench-71-average-log.png "Benchmark 071")
 
   * grok filters from patterns file
+
 ```
 Result - 3 workers: 
 Every generator running at 6% CPU.
