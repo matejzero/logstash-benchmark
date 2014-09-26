@@ -82,15 +82,15 @@ Speed: 4000 events/s
 
 ```
 Result - 4 workers: 
-Every generator running at 6% CPU.
-Every worker running at 90% CPU.
-Output running at 9% CPU.
+Every generator running at 4% CPU.
+Every worker running at 75% CPU.
+Output running at 6% CPU.
 
-Speed: 4000 events/s
+Speed: 5000 events/s
 ```
 
 ```
-Result - 5 workers: 
+Result - 6 workers: 
 Every generator running at 6% CPU.
 Every worker running at 90% CPU.
 Output running at 9% CPU.
