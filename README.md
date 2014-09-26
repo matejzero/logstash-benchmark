@@ -6,6 +6,7 @@ I was wondering how logstash performs and how much impact certain plugins, that 
 My test machine was 4x2,5GHz CPU and 8GB RAM.
 
 All tests had 3 generator input filters, 3 filter workers and 1 output (graphite and stdout(metrics only).
+Every test was lasting 30 minutes.
 
 
 Test scenarios
