@@ -20,6 +20,7 @@ Every worker running at 30% CPU.
 Output running at 70% CPU.
 
 Speed: 66000 events/s
+![Bench01](https://github.com/matejzero/logstash-benchmark/blob/master/bench01/bench-1-average-log.png "Basic measurement")
 ```
 - Log examples in generator plugin and no filters  - bench02
 ```Result: 
