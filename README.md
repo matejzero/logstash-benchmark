@@ -12,7 +12,7 @@ Every test was lasting 30 minutes.
 Test scenarios
 -----------
 
-1.  Base measurement - default generator plugin and no filters. - bench01
+1.Base measurement - default generator plugin and no filters. - bench01
 
 
 ```Result: 
@@ -34,7 +34,7 @@ Speed: 70000 events/s
 ```
 ![Bench02](https://github.com/matejzero/logstash-benchmark/blob/master/graphite-graphs/bench-2-average-log.png "Benchmark 02")
 
-3. Log examples in generator and partial grok filters (one line for every type)  - bench03
+3.Log examples in generator and partial grok filters (one line for every type)  - bench03
 ```Result: 
 Every generator running at 16% CPU.
 Every worker running at 90% CPU.
