@@ -9,7 +9,7 @@ All tests 3 generator input filters, 3 filter workers and 1 output (graphite and
 
 h3. Test scenarion:
 
- Sub-heading
- -----------
+Sub-heading
+-----------
  
  h3. Traditional html title
