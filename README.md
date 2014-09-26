@@ -130,3 +130,18 @@ Speed: 4300 events/s
 ```
 
 ![Bench072](https://github.com/matejzero/logstash-benchmark/blob/master/graphite-graphs/bench-72-average-log.png "Benchmark 072")
+
+Results
+-----------
+| Bench number  | Generator CPU  | Worker CPU | Output CPU | Events/s  |
+| --------------|:-------------:| -----:|
+| 1  	 | 30% | 30% | 70% | 66000 |
+| 2  	 | 33% | 30% | 70% | 70000 |
+| 3 	 | 16% | 90% | 28% | 22000 |
+| 4 	 | - | - | - | - |
+| 5 	 | 12% | 95% |  26% |  4000 |
+| 6  	 |  5% | 95% |  7% |  4000 |
+| 7.1 w3 | 6% | 90% | 9% | 4000 |
+| 7.1 w4 | 4% | 75% | 6% | 5000 |
+| 7.1 w6 | 3% | 45% | 7% | 4300 |
+| 7.2 | | | | | 
