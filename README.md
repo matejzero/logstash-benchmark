@@ -91,11 +91,11 @@ Speed: 5000 events/s
 
 ```
 Result - 6 workers: 
-Every generator running at 6% CPU.
-Every worker running at 90% CPU.
-Output running at 9% CPU.
+Every generator running at 3% CPU.
+Every worker running at 45% CPU.
+Output running at 7% CPU.
 
-Speed: 4000 events/s
+Speed: 4300 events/s
 ```
 
 ![Bench071](https://github.com/matejzero/logstash-benchmark/blob/master/graphite-graphs/bench-71-average-log.png "Benchmark 071")
