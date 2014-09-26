@@ -12,7 +12,7 @@ Every test was lasting 30 minutes.
 Test scenarios
 -----------
 
-1. Base measurement - default generator plugin and no filters. - bench01
+* Base measurement - default generator plugin and no filters. - bench01
 ```
 Result: 
 Every generator running at 30% CPU.
@@ -23,7 +23,7 @@ Speed: 66000 events/s
 ```
 ![Bench01](https://github.com/matejzero/logstash-benchmark/blob/master/graphite-graphs/bench-1-average-log.png "Benchmark 01")
 
-1. Log examples in generator plugin and no filters  - bench02
+* Log examples in generator plugin and no filters  - bench02
 ```
 Result: 
 Every generator running at 33% CPU.
