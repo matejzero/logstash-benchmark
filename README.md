@@ -21,11 +21,11 @@ Test scenarios
 -----------
 
 * Base measurement - default generator plugin and no filters. - bench01
-```
+
 | Bench number 	  | Generator CPU   | Worker CPU | Output CPU | Events/s  |
 | :--------------:|:-------------:  | :-----:	 | :-----:	  | :-----:   |
 | 1  	 		  | 30% 			| 		 30% | 		  70% | **66000** |
-```
+
 ![Bench01](https://github.com/matejzero/logstash-benchmark/blob/master/graphite-graphs/bench-1-average-log.png "Benchmark 01")
 
 * Log examples in generator plugin and no filters  - bench02
