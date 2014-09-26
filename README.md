@@ -20,7 +20,7 @@ Test scenarios
 
 ![Bench01](https://github.com/matejzero/logstash-benchmark/blob/master/graphite-graphs/bench-1-average-log.png "Benchmark 01")
 
-
+--
 * Log examples in generator plugin and no filters  - bench02
 
 | Bench number    | Generator CPU  | Worker CPU | Output CPU | Events/s  |
@@ -29,7 +29,7 @@ Test scenarios
 
 ![Bench02](https://github.com/matejzero/logstash-benchmark/blob/master/graphite-graphs/bench-2-average-log.png "Benchmark 02")
 
-
+--
 * Log examples in generator and partial grok filters (one line for every type)  - bench03
 
 | Bench number    | Generator CPU  | Worker CPU | Output CPU | Events/s  |
