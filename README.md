@@ -11,8 +11,8 @@ All tests had 3 generator input filters, 3 filter workers and 1 output (graphite
 Test scenarios
 -----------
 
-- Base measurement - bench01
-Default generator plugin and no filters.
+- Base measurement - default generator plugin and no filters. - bench01
+
 
 ```Result: 
 Every generator running at 30% CPU.
