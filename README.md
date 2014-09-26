@@ -11,17 +11,49 @@ All tests 3 generator input filters, 3 filter workers and 1 output (graphite and
 Test scenarios
 -----------
 
-- Base measurement: default generator plugins and no filters. Every generator was running at 30%, workers also at 30% and output at 70% CPU. I was getting around 66000events/s.
+- Base measurement:
+Default generator plugin and no filters.
 
-- Logs examples in generator plugin and no filters. Every generator was running at 33%, workers also at 30% and output at 70% CPU. I was getting around 70000events/s.
+Result: 
+Every generator running at 30% CPU.
+Every worker running at 30% CPU.
+Output running at 70% CPU.
 
-- Logs examples in generator and partial grok filters (one line for every type). Every generator was running at 16%, workers were at 90% and output at 28% CPU. I was getting around 22000events/s.
+Speed: 66000 events/s
+
+- Log examples in generator plugin and no filters
+Result: 
+Every generator running at 33% CPU.
+Every worker running at 30% CPU.
+Output running at 70% CPU.
+
+Speed: 70000 events/s
+
+- Logs examples in generator and partial grok filters (one line for every type)
+Result: 
+Every generator running at 16% CPU.
+Every worker running at 90% CPU.
+Output running at 28% CPU.
+
+Speed: 22000 events/s
 
 - Same as above, but droping logs (inside if statements for every type), that are not successfully parsed  ### ne vem kako ###
 
-- Logs examples in generator and full grok filters inside config file. Every generator was running at 12%, workers were at 95% and output at 26% CPU. I was getting around 16000events/s.
+- Logs examples in generator and full grok filters inside config file
+Result: 
+Every generator running at 12% CPU.
+Every worker running at 95% CPU.
+Output running at 26% CPU.
 
-- Logs examples in generator and full grok filters from patterns file. Every generator was running at 5%, workers were at 95% and output at 7% CPU. I was getting around 4000events/s.
+Speed: 16000 events/s
+
+- Logs examples in generator and full grok filters from patterns file.
+Result: 
+Every generator running at 5% CPU.
+Every worker running at 95% CPU.
+Output running at 7% CPU.
+
+Speed: 4000 events/s
 
 - Logs examples in generator, full grok parse and some other modifications (date, mutate, rename)
 	- grok filters inside config file
