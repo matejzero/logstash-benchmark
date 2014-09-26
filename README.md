@@ -12,7 +12,7 @@ Every test was lasting 30 minutes.
 Test scenarios
 -----------
 
-1. Base measurement - default generator plugin and no filters. - bench01
+1.  Base measurement - default generator plugin and no filters. - bench01
 
 
 ```Result: 
