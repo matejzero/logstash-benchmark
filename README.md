@@ -87,3 +87,19 @@ Per test results and graph:
 
 ![Rate graph](https://github.com/matejzero/logstash-benchmark/blob/master/graphs/6-rate.png)
 
+Results
+----------
+| Test `#`  | 1 worker  | 2 workers   | 3 workers  |
+|:-:|:-:|:-:|:-:|
+| Test #1 - stable   | 84176  | 83825 | 89235 |
+| Test #1 - devel    | 61714  | 67051 | 68272 |
+| Test #2 - stable   |  7099  | 14593 | 27796 |
+| Test #2 - devel    | 10072  | 20464 | 39950 |
+| Test #3 - stable   |  5870  | 11346 | 22654 |
+| Test #3 - devel    |  7813  | 15724 | 30283 |
+| Test #4 - stable   |  1997  |  3105 |  5022 |
+| Test #4 - devel    |  5381  | 10364 | 19249 |
+| Test #5 - stable   |  1945  |  3380 |  5952 |
+| Test #5 - devel    |  2123  |  2896 |  5189 |
+| Test #6 - stable   |   831  |  1526 |  2865 |
+| Test #6 - devel    |  1177  |  2303 |  4107 |
