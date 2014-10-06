@@ -5,7 +5,7 @@ I was wondering how different filters and ways of calling them affect performanc
 
 -------------
 
-[[toc]]
+[toc]
 
 How I tested
 -------------
