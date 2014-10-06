@@ -4,6 +4,8 @@ Logstash benchmark
 I was wondering how different filters and ways of calling them affect performance of logstash, so I decided to do a simple benchmark. I tested logstash 1.4.2 (stable) and current devel version from github(from 5.10.2014).
 
 ----------
+[TOC]
+
 How I tested
 -------------
 All test were done in VMware VMs and each had 6vCPUs (6x2,55GHz). None of the CPUs were occupied by any other VM, so logstash had the whole power just for him. When I was testing with 6 cores, 2 cores were on a different NUMA node, since I had 2x4core CPUs in my server.
