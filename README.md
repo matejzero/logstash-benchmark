@@ -3,7 +3,6 @@ Logstash benchmark
 
 I was wondering how different filters and ways of calling them affect performance of logstash, so I decided to do a simple benchmark. I tested logstash 1.4.2 (stable) and current devel version from github(from 5.10.2014).
 
--------------
 
 [toc]
 
@@ -48,7 +47,7 @@ Per test results and graph:
 #### 2. Partial grok filters (only one match for every type) 
 | `#` of workers    | Stable LS | Devel   LS|
 | :-------:         | :----:    | :---:     |
-| 1                 | 7099     |  10072    |
+| 1                 | 7099      |  10072    |
 | 2                 | 14593     |  20464    |
 | 4                 | 27796     |  39950    |
 
@@ -57,7 +56,7 @@ Per test results and graph:
 #### 3. Full grok filters inside config file
 | `#` of workers    | Stable LS | Devel   LS|
 | :-------:         | :----:    | :---:     |
-| 1                 | 5870     |  7813    |
+| 1                 | 5870      |  7813     |
 | 2                 | 11346     |  15724    |
 | 4                 | 22654     |  30283    |
 
@@ -66,27 +65,27 @@ Per test results and graph:
 #### 4. Full grok filters from patterns file
 | `#` of workers    | Stable LS | Devel   LS|
 | :-------:         | :----:    | :---:     |
-| 1                 | 1997     |  5381    |
-| 2                 | 3105     |  10364    |
-| 4                 | 5022     |  19249    |
+| 1                 | 1997      |  5381     |
+| 2                 | 3105      |  10364    |
+| 4                 | 5022      |  19249    |
 
 ![Rate graph](https://github.com/matejzero/logstash-benchmark/blob/master/graphs/4-rate.png)
 
 #### 5. Full grok filters inside config file and some other modifications (date, mutate, rename)
 | `#` of workers    | Stable LS | Devel   LS|
 | :-------:         | :----:    | :---:     |
-| 1                 | 1945     |  2123    |
-| 2                 | 3380     |  2896    |
-| 4                 | 5952     |  5189    |
+| 1                 | 1945      |  2123     |
+| 2                 | 3380      |  2896     |
+| 4                 | 5952      |  5189     |
 
 ![Rate graph](https://github.com/matejzero/logstash-benchmark/blob/master/graphs/5-rate.png)
 
 #### 6. Full grok filters from patterns file and some other modifications (date, mutate, rename)
 | `#` of workers    | Stable LS | Devel   LS|
 | :-------:         | :----:    | :---:     |
-| 1                 | 831     |  1177    |
-| 2                 | 1526     |  2303    |
-| 4                 | 2865     |  4107    |
+| 1                 | 831       |  1177     |
+| 2                 | 1526      |  2303     |
+| 4                 | 2865      |  4107     |
 
 ![Rate graph](https://github.com/matejzero/logstash-benchmark/blob/master/graphs/6-rate.png)
 
