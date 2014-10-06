@@ -3,9 +3,6 @@ Logstash benchmark
 
 I was wondering how different filters and ways of calling them affect performance of logstash, so I decided to do a simple benchmark. I tested logstash 1.4.2 (stable) and current devel version from github(from 5.10.2014).
 
-
-[toc]
-
 How I tested
 -------------
 All test were done in VMware VMs and each had 6vCPUs (6x2,55GHz). None of the CPUs were occupied by any other VM, so logstash had the whole power just for him. When I was testing with 6 cores, 2 cores were on a different NUMA node, since I had 2x4core CPUs in my server.
@@ -19,6 +16,19 @@ Every test was run for 30min:
  - 10 minutes with 1 worker and 3 CPUs
  - 10 minutes with 2 workers and 4 CPUs
  - 10 minutes with 4 workers and 6 CPUs
+
+
+#### **logstash-bench.sh**
+I used logstash-bench.sh script to run all my tests.
+
+Script does the following:
+ - Set starting point ( enable 3 cpus only and set 1 worker) and run
+   logstash
+ - Run for 10 minutes then add 1 cpu and 1 worker
+ - Run for 10 minutes then add 2 cpus and 2 workers
+ - After 30 minutes, shutdown logstash
+
+**Usage**: logstash-bench.sh test-number version ( logstash-bench.sh 1 stable )
 
 Test scenarios
 -------------
