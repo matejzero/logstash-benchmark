@@ -3,9 +3,9 @@ Logstash benchmark
 
 I was wondering how different filters and ways of calling them affect performance of logstash, so I decided to do a simple benchmark. I tested logstash 1.4.2 (stable) and current devel version from github(from 5.10.2014).
 
-----------
+-------------
 
-[TOC]
+[[toc]]
 
 How I tested
 -------------
